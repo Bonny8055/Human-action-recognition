@@ -12,7 +12,7 @@ classes=["WalkingWithDog", "HorseRace","Diving","Drumming","TennisSwing"]
 
 
 # Load the image
-image_path = r"input_image.jpg"
+image_path = r"input_image.jpg"  #paste your input image
 image = cv2.imread(image_path)
 
 # Resize the image to 64x64 and create a list of 20 copies
@@ -39,4 +39,5 @@ cv2.putText(image, text, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 255, 0), 2
 # Display the image
 cv2.imshow('Image', image)
 cv2.waitKey(0)
+
 cv2.destroyAllWindows()
